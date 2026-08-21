@@ -22,7 +22,4 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run tests
-  run: pytest test-app.py
-
-      - name: Build Docker image
-        run: docker build -t my-ci-app .
+        run: pytest test-app.py
